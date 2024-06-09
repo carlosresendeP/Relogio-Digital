@@ -41,7 +41,15 @@ section.relogio{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.568);
     border-radius: 7px;
     letter-spacing: 3px; /*epaçamento da letra*/
+    transition-duration: 0.4s;
 
+}
+
+div:hover{
+    transform: scale(1.06);
+    transition-duration: 0.2s;
+    background-image: linear-gradient(to bottom, rgb(5, 5, 5, .9 ),#f150063b );
+    cursor: pointer;
 }
 
 .relogio span{

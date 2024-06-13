@@ -18,6 +18,7 @@ body{
 
 }
 
+
 section.relogio{
     display: flex;
     align-items: center;
@@ -27,6 +28,10 @@ section.relogio{
     background: transparent;
     border-radius: 3px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.342) ;
+    margin: auto;
+
+
+    
 }
 
 .relogio div{
@@ -42,6 +47,8 @@ section.relogio{
     border-radius: 7px;
     letter-spacing: 3px; /*epaçamento da letra*/
     transition-duration: 0.4s;
+    margin: auto;
+
 
 }
 
@@ -60,3 +67,40 @@ div:hover{
 .relogio span.tempo{
     font-size: 10px;
 }
+
+/*Telas médias ( entre 481px e 768px ) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    section.relogio {
+      width: 400px;
+      height: 180px;
+    }
+   .relogio div {
+      width: 120px;
+      height: 140px;
+    }
+   .relogio span {
+      font-size: 50px;
+    }
+   .relogio span.tempo {
+      font-size: 10px;
+    }
+  }
+  
+  /* Telas grandes ( acima de 769px )*/
+  @media only screen and (min-width: 769px) {
+    section.relogio {
+      width: 500px;
+      height: 200px;
+    }
+  
+   .relogio div {
+      width: 150px;
+      height: 170px;
+    }
+   .relogio span {
+      font-size: 60px;
+    }
+   .relogio span.tempo {
+      font-size: 12px;
+    }
+  }
